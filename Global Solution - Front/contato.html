@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="styles/contato.css">
+</head>
+<body>
+    <header>
+        <img src="assets/Logo.png" alt="Logo">
+    </header>
+    <main>
+        <div class="comeco">
+            <h1>Fale conosco</h1>
+        </div>
+        <form id="form" action="javascript:void(0);">
+            <label for="name">Nome: </label>
+            <input type="text" id="name" name="name" placeholder="Nome" required>
+
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" name="email" pattern="^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$" placeholder="Ex: *****@*****.com" required>
+
+            <label for="text">Mensagem: </label>
+            <textarea id="text" name="text" required placeholder="Mensagem"></textarea>
+
+            <button type="submit" id="enviar">Enviar</button>
+        </form>
+        
+        <button type="button" id="voltarButton">Voltar</button>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 EcoPlastic</p>
+    </footer>
+    <script src="scripts/contato.js"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(7, 109, 168);
+    color: white;
+    font-size: 1.5rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+.cabecalho {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    position: relative;
+    z-index: 10;
+    gap: 2rem;
+    color: rgb(7, 109, 168);
+}
+
+.EcoPlastic {
+    font-size: 3rem;
+}
+
+.cabecalho img {
+    width: 10%;
+    height: auto;
+}
+
+.menu {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.outros {
+    display: flex;
+    gap: 2rem;
+}
+
+.outros a {
+    text-decoration: none;
+    color: white;
+}
+
+.outros a:hover {
+    color: rgb(7, 109, 168);
+}
+
+.comeco {
+    position: relative;
+    background-image: url(../assets/plastico.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 10rem 2rem;
+    z-index: 1;
+}
+
+.comeco .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.comeco h1 {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-size: 2rem;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    color: rgb(7, 109, 168);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 7%;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.quem {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.quem-content img {
+    padding-top: 3%;
+    width: 100%;
+    height: auto;
+}
+
+.beneficios {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.imagens3 img {
+    width: 25%;
+    height: auto;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media (max-width: 1200px) {
+    .menu {
+        display: block;
+    }
+
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .outros {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: black;
+        z-index: 20;
+    }
+
+    .outros a, .dropbtn {
+        padding: 1rem;
+        text-align: left;
+        width: 100%;
+    }
+
+    .outros.show {
+        display: flex;
+    }
+
+    .cabecalho img {
+        width: 20%;
+    }
+
+    .comeco {
+        padding: 3rem 1rem;
+    }
+
+    .comeco h1 {
+        font-size: 1.2rem;
+    }
+
+    .dropbtn {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .comeco {
+        padding: 2rem 1rem;
+    }
+
+    .comeco h1 {
+        font-size: 1rem;
+    }
+
+    .outros a, .dropbtn {
+        font-size: 0.8rem;
+    }
+
+    .imagens3 img {
+        width: 50%;
+        height: auto;
+    }
+
+    .EcoPlastic {
+        font-size: 2rem;
+    }
+}

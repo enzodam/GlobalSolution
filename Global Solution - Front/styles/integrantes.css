@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    background-color: rgb(7, 109, 168);
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header a {
+    color: rgb(7, 109, 168);
+    font-size: 2rem;
+}
+
+main {
+    width: 90%;
+    margin: 2rem auto;
+    flex: 1;
+}
+
+.cartao {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    margin: 1rem 0;
+    padding: 1rem;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.foto {
+    width: 15%;
+    height: auto;
+    border-radius: 30px;
+    margin-right: 3rem;
+}
+
+.detalhes {
+    flex: 1;
+}
+
+.detalhes p {
+    margin-bottom: 0.5rem;
+}
+
+.detalhes a {
+    color: rgb(7, 109, 168);
+    text-decoration: none;
+}
+
+.detalhes a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    width: 15%;
+    height: auto;
+    margin-left: 1rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#voltarButton {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1%;
+    border-radius: 20px;
+    font-size: 1.5rem;
+}
+
+#voltarButton:hover {
+    background-color: rgb(6, 74, 114);
+}
+
+@media (max-width: 900px) {
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto, .logo {
+        width: 30%;
+        margin-bottom: 1rem;
+    }
+
+    .foto {
+        margin-right: 0;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .detalhes {
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    header a {
+        font-size: 1rem;
+    }
+
+    .foto, .logo {
+        width: 40%;
+    }
+
+    body {
+        font-size: 1.2rem;
+    }
+
+    .cartao {
+        padding: 0.5rem;
+    }
+}
