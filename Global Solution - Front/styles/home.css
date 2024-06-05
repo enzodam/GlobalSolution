@@ -45,7 +45,7 @@ main {
 
 .outros {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .outros a {
