@@ -49,6 +49,7 @@ form label {
     align-self: flex-start;
     margin-left: 25%;
     margin-bottom: 0.5rem;
+    font-size: 1.5rem;
 }
 
 form input, form textarea {
