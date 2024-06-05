@@ -144,6 +144,9 @@ main {
 }
 
 .imagens3 img {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
     width: 25%;
     height: auto;
 }
