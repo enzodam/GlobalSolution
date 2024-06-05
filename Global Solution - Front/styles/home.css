@@ -205,6 +205,10 @@ footer {
     .dropbtn {
         font-size: 1.2rem;
     }
+
+    .imagens3 img {
+        width: 30%;
+    }
 }
 
 @media (max-width: 600px) {
