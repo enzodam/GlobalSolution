@@ -148,8 +148,7 @@ main {
 }
 
 .imagens3 img {
-    display: flex;
-    flex-direction: column;
+    margin-right: 2%;
     margin-top: 3%;
     width: 25%;
     height: auto;
