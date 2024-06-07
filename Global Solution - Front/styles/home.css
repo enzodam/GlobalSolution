@@ -160,8 +160,56 @@ footer {
     text-align: center;
     padding: 1rem 0;
 }
+.accordion {
+    margin-bottom: 1rem;
+}
 
+.accordion-button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2rem;
+    transition: 0.4s;
+}
+
+.accordion-button.active, .accordion-button:hover {
+    background-color: rgb(49, 48, 48);
+}
+
+.accordion-content {
+    padding: 0 1rem;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+}
+
+.accordion-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.accordion-item img {
+    margin-right: 1rem;
+    width: 15%;
+    height: auto;
+}
 @media (max-width: 1200px) {
+    .accordion-item {
+        flex-direction: column;
+    }
+
+    .accordion-item img {
+        width: 100%;
+        margin-top: 1rem;
+    }
     .menu {
         display: block;
     }
