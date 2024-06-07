@@ -37,3 +37,21 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'contato.html';
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const accButtons = document.querySelectorAll('.accordion-button');
+    
+    accButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            
+            button.classList.toggle('active');
+            
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        });
+    });
+});
